@@ -1,10 +1,12 @@
-import { Button, HeroUIProvider } from "@heroui/react";
+import { HeroUIProvider } from "@heroui/react";
+import Header from "./components/Header";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <HeroUIProvider>
-      <div className="w-44 h-44 bg-[#252525]"></div>
-      <Button color="primary">test</Button>
+      <Header />
+      <Home />
     </HeroUIProvider>
   );
 }
