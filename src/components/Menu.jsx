@@ -14,7 +14,7 @@ function Menu({ isOpen, setIsOpen }) {
     >
       <AnimatePresence>{isOpen && <CloseMenu setIsOpen={setIsOpen} />}</AnimatePresence>
       <motion.main className="flex flex-col lg:flex-row justify-between gap-10">
-        <AnimatePresence>{isOpen && <MenuNav />} </AnimatePresence>
+        <AnimatePresence>{isOpen && <MenuNav setIsOpen={setIsOpen} />} </AnimatePresence>
         <AnimatePresence>{isOpen && <MenuContact />} </AnimatePresence>
       </motion.main>
     </motion.section>

@@ -1,11 +1,11 @@
 import PagesLanding from "../../components/PagesLanding";
 
-function Home() {
+function Contact() {
   return (
     <main className="flex flex-col w-[100%] h-auto">
-      <PagesLanding title="HAMIDREZA SAFARPOUR" text="WEB-DESIGNER" />
+      <PagesLanding title="CONTACT ME" text="SAY HELLO TO ME" />
     </main>
   );
 }
 
-export default Home;
+export default Contact;
