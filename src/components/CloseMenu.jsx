@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import line from "../assets/menu-lines.png";
-import { memo } from "react";
 
 function CloseMenu({ setIsOpen }) {
   return (
@@ -10,7 +9,7 @@ function CloseMenu({ setIsOpen }) {
         animate={{ opacity: 1, rotate: 45 }}
         exit={{ opacity: 0, rotate: 0 }}
         transition={{ duration: 0.3 }}
-        className="absolute top-16 right-16"
+        className="absolute top-10 right-10 sm:top-16 sm:right-16"
       >
         <img src={line} />
       </motion.span>
@@ -19,7 +18,7 @@ function CloseMenu({ setIsOpen }) {
         animate={{ opacity: 1, rotate: -45 }}
         exit={{ opacity: 0, rotate: 0 }}
         transition={{ duration: 0.3 }}
-        className="absolute top-16 right-16"
+        className="absolute top-10 right-10 sm:top-16 sm:right-16"
       >
         <img src={line} />
       </motion.span>
@@ -27,4 +26,4 @@ function CloseMenu({ setIsOpen }) {
   );
 }
 
-export default memo(CloseMenu);
+export default CloseMenu;
