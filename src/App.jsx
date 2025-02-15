@@ -5,14 +5,15 @@ import Projects from "./pages/Projects/Projects";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./components/Root";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <Root />,
     children: [
       {
-        path: "home",
+        path: "",
         element: <Home />,
       },
       {
