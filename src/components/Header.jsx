@@ -3,7 +3,7 @@ import bars from "../assets/bars.png";
 import { AnimatePresence, motion } from "motion/react";
 import Menu from "./Menu";
 import { useState, memo, useCallback } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation, useParams } from "react-router-dom";
 
 const animation = {
   hover: { scale: 1.1 },
@@ -11,6 +11,7 @@ const animation = {
 
 const Header = memo(function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const handleOpen = useCallback(() => {
     setIsOpen(true);
@@ -28,6 +29,7 @@ const Header = memo(function Header() {
           className="absolute max-sm:right-10 max-sm:top-10 right-14 top-16 cursor-pointer"
         />
       </header>
+      {location.pathname === "/" && <section className="w-[100vw] h-[100vh] bg-black"></section>}
       <Outlet />
     </>
   );
