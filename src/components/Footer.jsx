@@ -20,7 +20,7 @@ function Footer() {
       <section className="flex max-md:flex-row-reverse w-full md:w-[60%] h-[80%] md:h-full justify-center md:justify-between items-start max-md:items-center gap-10">
         <div className="flex flex-col text-white max-[420px]:text-xs max-[520px]:text-sm lg:text-lg font-semibold">
           <p>hamidreza.safarpour01@gmail.com</p>
-          <p>+98 994 461 8481</p>
+          <a href="tel:+989944618481">+98 994 461 8481</a>
         </div>
         <img src={logo} alt="Logo" className="h-[70px]" />
       </section>
