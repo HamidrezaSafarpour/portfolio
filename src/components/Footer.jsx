@@ -11,7 +11,7 @@ function Footer() {
   }, [pathname]);
 
   return (
-    <footer className="flex max-md:flex-col items-center justify-between max-md:justify-center w-full h-[30vh] bg-black mt-10 p-20">
+    <footer className="flex max-md:flex-col max-md:gap-20 items-center justify-between max-md:justify-center w-full h-[30vh] bg-black mt-10 max-[370px]:px-10 p-20">
       <nav className="flex w-full md:w-[20%] h-[20%] md:h-full gap-4 justify-between text-white lg:text-lg font-semibold">
         <Link to="projects">Projects</Link>
         <Link to="about">About</Link>
@@ -22,7 +22,7 @@ function Footer() {
           <p>hamidreza.safarpour01@gmail.com</p>
           <p>+98 994 461 8481</p>
         </div>
-        <img src={logo} alt="Logo" className="max-[420px]:h-[60%] h-[80%]" />
+        <img src={logo} alt="Logo" className="h-[70px]" />
       </section>
     </footer>
   );
