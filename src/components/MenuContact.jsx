@@ -3,13 +3,14 @@ import github from "../assets/github.png";
 import linkedIn from "../assets/linkedin.png";
 
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
 
 function MenuContact() {
   return (
     <motion.main className="flex flex-col h-[50%] lg:pl-10 justify-center gap-4 self-center lg:self-end font-semibold">
       <p className="max-[400px]:text-xs sm:text-sm">hamidreza.safarpour01@gmail.com</p>
-      <p className="max-[400px]:text-xs sm:text-sm">+98 994 461 8481</p>
+      <a href="tel:+989944618481" className="max-[400px]:text-xs sm:text-sm">
+        +98 994 461 8481
+      </a>
       <div className="flex w-full gap-3">
         <a href="https://github.com/HamidrezaSafarpour" className="size-6">
           <img src={github} />

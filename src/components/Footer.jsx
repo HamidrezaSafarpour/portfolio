@@ -11,7 +11,7 @@ function Footer() {
   }, [pathname]);
 
   return (
-    <footer className="flex max-md:flex-col max-md:gap-20 items-center justify-between max-md:justify-center w-full h-[30vh] bg-black mt-10 max-[370px]:px-10 p-20">
+    <footer className="flex max-md:flex-col max-md:gap-16 items-center justify-between max-md:justify-center w-full h-[30vh] bg-black mt-10 max-[370px]:px-10 p-20">
       <nav className="flex w-full md:w-[20%] h-[20%] md:h-full gap-4 justify-between text-white lg:text-lg font-semibold">
         <Link to="projects">Projects</Link>
         <Link to="about">About</Link>

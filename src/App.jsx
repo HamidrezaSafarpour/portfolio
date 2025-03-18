@@ -1,5 +1,4 @@
 import { HeroUIProvider } from "@heroui/react";
-import Header from "./components/Header";
 import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
 import About from "./pages/About/About";
